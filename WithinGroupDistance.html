@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel=stylesheet href=css/box.css>
+<script src="js/d3/d3.v3.min.js"></script>
+<script src="js/js-others/box.js"></script>
+<script src="js/js-own/drawBox.js"></script>
+
+<body>
+<div id="vis">
+      <svg id = "boxPlotSvg"></svg>
+</div>
+
+<div id = "container">
+<div id = "selectionUI">
+  <select id="meanOrVariance" onchange="selectVariable()">
+      <option>Mean</option>
+      <option>Variance</option>
+  </select>
+</div>
+</div>
+
+</body>

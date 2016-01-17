@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  /*display: none;*/
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+  font-size: 13px;
+}
+
+</style>
+<body>
+
+<div id = "barChart">
+</div>
+
+<div id = "floatingLabels" style = "top: 441px; position: absolute; left: -30px; width: 80px;">
+    <div align="right">Top Lane</div>
+    <div align="right">Mid Lane</div>
+    <div align="right">Bot Lane</div>
+    <div align="right">Jungle</div>
+    <div align="right">River</div>
+</div>
+
+<div>
+  <svg id="barchart" align = "left">
+  </svg>
+
+  <svg id="vis" align = "left"; style = " left: 730px; top: 10px; position: absolute">
+    <g id="background_image"></g>
+<!--     <g class="dot"></g> -->
+  </svg>
+</div>
+
+<div id = "container" align="left" style = "left: 450px; position: relative;">
+<div id = "selectionUI">
+  <select id="winOrLose" onchange="selectVariable()">
+      <option>Win</option>
+      <option>Lose</option>
+  </select>
+</div>
+</div>
+
+<script src="js/d3/d3.v3.min.js"></script>
+<script src="js/js-own/drawBar.js"></script>
+</body>

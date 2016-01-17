@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel=stylesheet href=css/box.css>
+<script src="js/d3/d3.v3.min.js"></script>
+<script src="js/js-others/box.js"></script>
+<script src="js/js-own/zoneChange_drawBox.js"></script>
+
+<body>
+<div id="vis">
+      <svg id = "boxPlotZoneChange"></svg>
+</div>
+
+<div id = "selectionUI" style = "left: 300px; position: relative;">
+  <select id="winOrLose" onchange="selectVariable()">
+      <option>Zone Change</option>
+      <option>Zone Change per Minute per Person</option>
+  </select>
+</div>
+
+</body>
